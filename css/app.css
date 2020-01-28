@@ -1,0 +1,245 @@
+/* app css stylesheet */
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  color: black;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: Harabara;
+  src: url(Harabara.ttf);
+}
+
+@font-face {
+  font-family: Coolvetica;
+  src: url(Coolvetica.ttf);
+}
+
+@font-face {
+  font-family: MoonFlower;
+  src: url(MoonFlower.ttf);
+}
+
+@font-face {
+  font-family: Gotham;
+  src: url(gotham-medium.ttf);
+}
+
+h1 {
+  font-family: Gotham;
+}
+
+h3 {
+  margin: 0em 0em .5em 0em;
+}
+
+
+.page-header {
+  position: fixed;
+  width: 100%;
+  padding-top: 10px;
+  font-size: 2em;
+  font-family: Gotham;
+  font-weight: bold;
+  text-align: center;
+  background-color: white;
+  z-index: 2;
+  border-bottom: 3px solid grey;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -ms-transition: .3s ease;
+  -o-transition: .3s ease;
+}
+
+.page-sub-header {
+  padding-top: .5em;
+  width: 100%;
+  font-size: .75em;
+  font-family: Gotham;
+  font-weight: bold;
+  text-align: center;
+}
+
+main {
+  font-family: Arial;
+  font-weight: 300;
+  letter-spacing: .3px;
+  margin: 0em 13em 0em 13em;
+  font-size: 14px;
+  position: relative;
+  z-index: 1;
+  padding: 0 15px;
+}
+
+.main-body {
+  z-index: 1;
+  padding-top: 70px;
+  height: 100%;
+}
+
+@media only screen and (min-width: 480px) {
+  main {
+    width: 550px;
+    /*display: block;*/
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 950px) {
+  #navbar-wrapper {
+    position: fixed;
+    top: 138px;
+  }
+
+  .navbar {
+    width: 15em;
+    margin-left: 7em;
+    z-index: 10;
+  }
+
+  .navbar li {
+    margin: 0;
+  }
+}
+
+.display {
+  display: block;
+}
+
+.hidden {
+  display: none !important;
+}
+
+main p {
+  font-size: 15px;
+}
+
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}
+
+
+/*#navbar-wrapper.sticky {
+  position: fixed;
+  top: 0;
+}*/
+
+.navbar li {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.navbar a {
+  font-family: Gotham;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: #0C73D7;
+}
+
+.prof-pic {
+  width: 200px;
+  border-radius: 75%;
+  margin: auto;
+  display: block;
+  z-index: 1;
+}
+
+.skill-pic {
+  width: 125px;
+  height: 125px;
+  padding: 2px;
+}
+
+.long-skill-pic {
+  width: 250px;
+}
+
+.contact-images {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-pic {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+
+#github-img {
+  /* if you're looking this closely, bravo! My photo editor refused to start, so I used an ID to properly resize the image */
+  width: 80px;
+  height: 80px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+  padding-left: 15px;
+}
+
+.nav-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+
+
+.portfolio-pic {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  object-fit: cover;
+  overflow: hidden;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+.portfolio-link {
+  margin: 12px 0;
+  text-decoration: none;
+}
+
+.portfolio-item {
+  flex-basis: 30%;
+  font-size: 8px;
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 950px) {
+  .navbar {
+    margin: auto;
+    width: 10em;
+    text-align: center;
+  }
+
+  #navbar-wrapper {
+    width: 100%;
+  }
+
+  .portfolio-item {
+    margin: 6px 6px 0;
+  }
+
+  main {
+    margin: auto;
+    /*text-align: center;*/
+  }
+}
